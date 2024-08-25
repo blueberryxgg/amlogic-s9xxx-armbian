@@ -23,7 +23,7 @@ on:
         description: "Select device board."
         required: false
         default: "all"
-        type: choice
+        type: s905l2
         options:
           - all
           - s905w_s905x_s905mb_s905l3a_s905l3b_s905x2_s905x3_s912_s922x_s922x-ct2000_s922x-reva
@@ -171,7 +171,7 @@ on:
         description: "Select kernel version."
         required: false
         default: "6.1.y_6.6.y"
-        type: choice
+        type: 5.15.159
         options:
           - 5.4.y
           - 5.10.y
@@ -196,7 +196,7 @@ on:
         description: "Set the tags of the stable kernel."
         required: false
         default: "stable"
-        type: choice
+        type: dev
         options:
           - stable
           - flippy
@@ -214,7 +214,7 @@ on:
         description: "Select image storage type."
         required: false
         default: "save"
-        type: choice
+        type: save
         options:
           - save
           - temp
@@ -222,7 +222,7 @@ on:
         description: "Set Armbian builder signature."
         required: false
         default: "ophub"
-        type: choice
+        type: yourname
         options:
           - ophub
           - angel
